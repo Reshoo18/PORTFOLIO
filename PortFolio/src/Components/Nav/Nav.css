@@ -5,6 +5,20 @@ Nav{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    position: fixed;
+    top:0;
+    
+}
+nav ul a{
+    cursor: pointer;
+}
+nav ul a:hover{
+     color: rgb(28, 173, 173);
+    border-bottom: 2px solid white;
+}
+.active{
+    color: rgb(28, 173, 173);
+    border-bottom: 2px solid white;
 }
 ul{
     display: flex;
@@ -13,10 +27,48 @@ ul{
     gap:20px;
     color: white;
     list-style: none;
+    
 }
 nav h1{
     font-size: 35px;
     background: linear-gradient(to right,rgb(66, 180, 205),white);
     background-clip: text;
     color: transparent;
+}
+.hamburger{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:8px;
+flex-direction: column;
+display: none;
+}
+.ham{
+    width: 40px;
+    height: 2px;
+    background-color: aliceblue;
+}
+.mobilemenu{
+    
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: all 0.5s;
+   
+}
+.activemobile{
+    transform: translateX(0%);
+}
+@media (max-width:750px) {
+    .desktopmenu{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
 }
