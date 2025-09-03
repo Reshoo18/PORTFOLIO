@@ -15,6 +15,7 @@ export default function nav() {
         </ul>
         <div className="hamburger" ref={menu} onClick={()=>{
          mobile.current.classList.toggle("activemobile")
+         menu.current.classList.toggle("activeham")
         }
         }>
           <div className="ham"></div>
