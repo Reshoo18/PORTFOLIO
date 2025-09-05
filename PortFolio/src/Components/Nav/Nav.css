@@ -7,6 +7,7 @@ Nav{
     padding: 20px;
     position: fixed;
     top:0;
+    z-index: 20;
     
 }
 nav ul a{
