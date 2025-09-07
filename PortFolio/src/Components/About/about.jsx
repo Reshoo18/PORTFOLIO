@@ -1,5 +1,9 @@
 import React from 'react'
 import "./About.css"
+import Card from '../Card/card'
+import mern from"../../assets/mern.png"
+import cpp from "../../assets/c++.png"
+import dsanew from "../../assets/dsanew.png"
 function About() {
   return (
   <div id="about">
@@ -65,7 +69,15 @@ function About() {
         </div>
        </div>
     </div>
-    <div className="rightabout"></div>
+    <div className="rightabout">
+      <Card title="MERN STACK WEB DEVELOPER" image={mern}/>
+      <Card title="C++" image={cpp}/>
+      <Card title="DSA"  image={dsanew}/>
+
+      
+
+
+    </div>
   </div>
   )
 }

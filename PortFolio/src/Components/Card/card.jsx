@@ -1,6 +1,7 @@
 import React from 'react'
-
-function card(title) {
+import "./card.css"
+import mern from "../../assets/mern.png"
+function Card({title,image}) {
   return (
     <div className="card">
        <h1>{title}</h1>
@@ -11,4 +12,4 @@ function card(title) {
   )
 }
 
-export default card
+export default Card
