@@ -72,7 +72,7 @@ function About() {
     <div className="rightabout">
       <Card title="MERN STACK WEB DEVELOPER" image={mern}/>
       <Card title="C++" image={cpp}/>
-      <Card title="DSA"  image={dsanew}/>
+      <Card title="DSA"  image={dsanew}  />
 
       
 

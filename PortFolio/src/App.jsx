@@ -1,6 +1,9 @@
-import About from "./Components/About/about"
+import About from "./Components/About/About"
 import Home from "./Components/Home/home"
 import Nav from "./Components/Nav/nav"
+import Projects from "./Components/Projects/Projects"
+
+
 function App() {
 
   return (
@@ -8,7 +11,7 @@ function App() {
      <Nav/>
      <Home/>
      <About/>
-
+     <Projects/>
 
     </>
   )
