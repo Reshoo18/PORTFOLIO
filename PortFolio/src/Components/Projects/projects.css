@@ -22,4 +22,5 @@
     background: linear-gradient(to right,rgb(191, 71, 169),white);
     background-clip: text;
     color: transparent;
+    text-align: center;
 }

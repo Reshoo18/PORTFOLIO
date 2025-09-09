@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "./nav.css"
 import {Link} from "react-scroll"
-export default function nav() {
+export default function Nav() {
   let menu=useRef()
   let mobile=useRef()
   return (
