@@ -4,7 +4,85 @@ import Card from '../Card/card'
 import mern from"../../assets/mern.png"
 import cpp from "../../assets/c++.png"
 import dsanew from "../../assets/dsanew.png"
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
+
+
 function About() {
+      useGSAP(()=>{
+            gsap.from(".circle",{
+                  x:-100,
+                  duration:1,
+                  opacity:0,
+                  stagger:1,
+                  scrollTrigger:{
+                        trigger:".circle",
+                        scroll:"body",
+                        scrub:2,
+                        
+                        start:"top 60%",
+                        end:"top 30%"
+                  }
+            })
+            gsap.from(".line",{
+                  x:-100,
+                  duration:1,
+                  opacity:0,
+                  stagger:1,
+                  scrollTrigger:{
+                        trigger:".line",
+                        scroll:"body",
+                        scrub:2,
+                       
+                        start:"top 60%",
+                        end:"top 30%"
+                  }
+            })
+            gsap.from(".aboutdetailes h1",{
+                  x:-100,
+                  duration:1,
+                  opacity:0,
+                  stagger:1,
+                  scrollTrigger:{
+                        trigger:".aboutdetailes h1",
+                        scroll:"body",
+                        scrub:2,
+                        
+                        start:"top 60%",
+                        end:"top 30%"
+                  }
+            })
+            gsap.from(".aboutdetailes li",{
+                  y:100,
+                  duration:1.2,
+                  opacity:0,
+                  stagger:1,
+                  scrollTrigger:{
+                        trigger:".aboutdetailes li",
+                        scroll:"body",
+                        scrub:2,
+                  
+                        start:"top 60%",
+                        end:"top 30%"
+                  }
+            })
+            gsap.from(".rightabout",{
+                  x:100,
+                  duration:1,
+                  opacity:0,
+                  stagger:1,
+                  scrollTrigger:{
+                        trigger:".rightabout",
+                        scroll:"body",
+                        scrub:2,
+                        
+                        start:"top 60%",
+                        end:"top 30%"
+                  }
+            })
+      })
   return (
   <div id="about">
     <div className="leftabout">
@@ -31,6 +109,9 @@ function About() {
                 </li>
                 <li>
           <span>LANGUAGE KNOWN</span> : ENGLISH , HINDI
+                </li>
+                <li>
+          <span>E-MAIL</span> : reshooranjan7@gmail.com
                 </li>
             </ul>
          

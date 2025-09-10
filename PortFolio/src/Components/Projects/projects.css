@@ -16,6 +16,7 @@
     overflow-x: scroll;
     gap: 25px;
     scrollbar-width: none;
+    padding: 20px;
 }
 #para{
     font-size: 4vmax;
@@ -23,4 +24,5 @@
     background-clip: text;
     color: transparent;
     text-align: center;
+    justify-content: center;
 }

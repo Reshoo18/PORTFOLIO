@@ -1,6 +1,6 @@
 import About from "./Components/About/About"
 import Home from "./Components/Home/Home"
-import Nav from "./Components/Nav/nav"
+import Nav from "./Components/Nav/Nav"
 import Projects from "./Components/Projects/Projects"
 import Contact from "./Components/Contact/contact"
 
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App 
