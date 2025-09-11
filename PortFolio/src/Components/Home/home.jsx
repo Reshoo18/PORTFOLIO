@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Home.css"
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+
 import man from "../../assets/man.png"
 import Typewriter from "typewriter-effect";
 import { useGSAP } from '@gsap/react';
@@ -29,20 +31,34 @@ function Home() {
     <div id="home">
         <div className="lefthome">
           <div className="homedetails">
-            <div className="line1">I'M</div>
-            <div className="line2">RESHOO RANJAN</div>
-            <div className="line3">
-              <Typewriter
-  options={{
-    strings: ["WEB DEVELOPER", "SOFTWARE DEVELOPER","MERN"],
-    autoStart: true,
-    loop: true,
-  }}
-/>
+  <div className="line1">I'M</div>
+  <div className="line2">RESHOO RANJAN</div>
+  <div className="line3">
+    <Typewriter
+      options={{
+        strings: ["WEB DEVELOPER", "SOFTWARE DEVELOPER", "MERN"],
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  </div>
+  <button>HIRE ME</button>
+  <div className="social-links">
+    <a href="https://github.com/Reshoo18" target="_blank" rel="noopener noreferrer">
+      <FaGithub size={30} />
+    </a>
+    <a href="https://www.linkedin.com/in/reshoo-ranjan-22b74829a" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin size={30} />
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <FaInstagram size={30} />
+    </a>
+    
+
+  </div>
+</div>
           </div>
-    <button>HIRE ME</button>
-          </div>
-        </div>
+        
 
         <div className="righthome">
             <img src={man} alt="" />
