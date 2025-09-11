@@ -13,9 +13,10 @@
     color: rgb(248, 251, 251);
 }
 .social-links {
-  margin-top: 20px;
+  
+  margin-top: 50px;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
 }
 
@@ -84,4 +85,18 @@
     height: 50vh;
     align-items: end;
 }
+}.social-links a.github-icon {
+  color: white; /* GitHub's brand color */
+}
+
+.social-links a.linkedin-icon {
+  color: #0A66C2; /* LinkedIn's brand color */
+}
+
+.social-links a.instagram-icon {
+  color: #E4405F; /* Instagram's brand color */
+}
+
+.social-links a.leetcode-icon {
+  color: #FFA116; /* LeetCode's brand color */
 }

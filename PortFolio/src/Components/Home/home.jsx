@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-
+import { SiLeetcode } from "react-icons/si";
 import man from "../../assets/man.png"
 import Typewriter from "typewriter-effect";
 import { useGSAP } from '@gsap/react';
@@ -44,16 +44,18 @@ function Home() {
   </div>
   <button>HIRE ME</button>
   <div className="social-links">
-    <a href="https://github.com/Reshoo18" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/Reshoo18" target="_blank" rel="noopener noreferrer" className="github-icon">
       <FaGithub size={30} />
     </a>
-    <a href="https://www.linkedin.com/in/reshoo-ranjan-22b74829a" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/in/reshoo-ranjan-22b74829a" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
       <FaLinkedin size={30} />
     </a>
-    <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <a href="https://instagram.com/reshooranjan" target="_blank" rel="noopener noreferrer" className="instagram-icon">
       <FaInstagram size={30} />
     </a>
-    
+    <a href="https://leetcode.com/CGVwD5faxE/" target="_blank" rel="noopener noreferrer" className="leetcode-icon">
+    <SiLeetcode size={30} />
+  </a>
 
   </div>
 </div>
