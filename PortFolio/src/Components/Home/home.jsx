@@ -8,66 +8,72 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 function Home() {
-  useGSAP(()=>{
-      let tl1=gsap.timeline();
-      tl1.from(".line1",{
-        y:100,
-        duration:1,
-        opacity:0
-      })
-      tl1.from(".line2",{
-        y:100,
-        duration:1,
-        opacity:0
-      })
-      tl1.from(".line3",{
-        y:100,
-        duration:1,
-        opacity:0
-      })
-  })
+    // This is the new function to handle the button click
+    const handleHireMeClick = () => {
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=reshooranjan7@gmail.com', '_blank');
+    };
 
-  return (
-    <div id="home">
-        <div className="lefthome">
-          <div className="homedetails">
-  <div className="line1">I'M</div>
-  <div className="line2">RESHOO RANJAN</div>
-  <div className="line3">
-    <Typewriter
-      options={{
-        strings: ["WEB DEVELOPER", "SOFTWARE DEVELOPER", "MERN"],
-        autoStart: true,
-        loop: true,
-      }}
-    />
-  </div>
-  <button>HIRE ME</button>
-  <div className="social-links">
-    <a href="https://github.com/Reshoo18" target="_blank" rel="noopener noreferrer" className="github-icon">
-      <FaGithub size={30} />
-    </a>
-    <a href="https://www.linkedin.com/in/reshoo-ranjan-22b74829a" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
-      <FaLinkedin size={30} />
-    </a>
-    <a href="https://instagram.com/reshooranjan" target="_blank" rel="noopener noreferrer" className="instagram-icon">
-      <FaInstagram size={30} />
-    </a>
-    <a href="https://leetcode.com/CGVwD5faxE/" target="_blank" rel="noopener noreferrer" className="leetcode-icon">
-    <SiLeetcode size={30} />
-  </a>
+    useGSAP(()=>{
+        let tl1=gsap.timeline();
+        tl1.from(".line1",{
+            y:100,
+            duration:1,
+            opacity:0
+        })
+        tl1.from(".line2",{
+            y:100,
+            duration:1,
+            opacity:0
+        })
+        tl1.from(".line3",{
+            y:100,
+            duration:1,
+            opacity:0
+        })
+    })
 
-  </div>
-</div>
-          </div>
-        
+    return (
+        <div id="home">
+            <div className="lefthome">
+                <div className="homedetails">
+                    <div className="line1">I'M</div>
+                    <div className="line2">RESHOO RANJAN</div>
+                    <div className="line3">
+                        <Typewriter
+                            options={{
+                                strings: ["WEB DEVELOPER", "SOFTWARE DEVELOPER", "MERN"],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </div>
+                    {/* The `<a>` tag now has an onClick event */}
+                    <a onClick={handleHireMeClick} className="hire-me-button">
+                        HIRE ME
+                    </a>
 
-        <div className="righthome">
-            <img src={man} alt="" />
+                    <div className="social-links">
+                        <a href="https://github.com/Reshoo18" target="_blank" rel="noopener noreferrer" className="github-icon">
+                            <FaGithub size={30} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/reshoo-ranjan-22b74829a" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                            <FaLinkedin size={30} />
+                        </a>
+                        <a href="https://instagram.com/reshooranjan" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+                            <FaInstagram size={30} />
+                        </a>
+                        <a href="https://leetcode.com/CGVwD5faxE/" target="_blank" rel="noopener noreferrer" className="leetcode-icon">
+                            <SiLeetcode size={30} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="righthome">
+                <img src={man} alt="" />
+            </div>
         </div>
-
-    </div>
-  )
+    )
 }
 
 export default Home
