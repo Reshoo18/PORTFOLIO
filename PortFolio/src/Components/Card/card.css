@@ -5,7 +5,6 @@
     align-items: center;
     /* This is the key to fixing the size issue */
     flex-shrink: 0;
-     gap: 30px;
 }
 /* The fixed dimensions below will prevent the card from becoming smaller */
 .card {
@@ -28,10 +27,7 @@
    
 }
 
-.card h3{
-    color: #7ad7ea;
-    font-size: 23px;
-}
+
 .hovercard img {
     height: 80%;
     filter: drop-shadow(2px 2px 10px black);
@@ -59,14 +55,27 @@
 }
 /* Style the button and add space above it */
 .view-project-btn {
-    margin-top: 15px; /* Adjust this value to set the gap between the card and the button */
-    padding: 10px 20px;
+    /* margin-top: 15px; */
+    /* padding: 10px 20px;
     background-color: #6c63ff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: bold; */
+    padding: 10px 30px;
+    background-color: rgb(60, 180, 205);
+    border: 2px solid rgb(60, 180, 205);
+    margin-top: 30px;
+    font-size: 19px;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 .view-project-btn:hover {
-    background-color: #554ecb;
+    /* background-color: #554ecb; */
+    background-color: transparent;
+    color: rgb(11, 224, 146);
 }

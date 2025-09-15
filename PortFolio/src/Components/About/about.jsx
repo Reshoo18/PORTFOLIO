@@ -50,19 +50,21 @@ function About() {
         end: "top 30%"
       }
     });
-    gsap.from(".aboutdetailes li", {
+    gsap.from(".aboutdetailes ul", {
       y: 100,
       duration: 1.2,
       opacity: 0,
       stagger: 1,
       scrollTrigger: {
-        trigger: ".aboutdetailes li",
+        trigger: ".aboutdetailes ul",
         scroll: "body",
         scrub: 2,
         start: "top 60%",
         end: "top 30%"
       }
+      
     });
+    
     gsap.from(".rightabout", {
       x: 100,
       duration: 1,

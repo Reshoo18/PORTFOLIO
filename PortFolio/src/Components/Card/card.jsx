@@ -20,7 +20,7 @@ function Card({ title, image, repoUrl, showButton }) {
           rel="noopener noreferrer" 
           className="view-project-btn"
         >
-          <button>View Project</button>
+          <a>View Project</a>
         </a>
       )}
     </div>

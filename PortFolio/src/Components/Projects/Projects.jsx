@@ -31,10 +31,10 @@ function Projects() {
     <div id="projects">
       <h1 id="para">1+ YEAR EXPERIENCE IN PROJECTS</h1>
       <div className="slider">
-        <Card title="WEATHER APP" image={weather} repoUrl="https://github.com/your-username/weather-app-repo" showButton={true} />
-        <Card title="BILLING SOFTWARE" image={bill} repoUrl="https://github.com/your-username/billing-software-repo" showButton={true} />
-        <Card title="TEXT ANALYZER" image={text} repoUrl="https://https://textythings.netlify.app/" showButton={true} />
-        <Card title="NEWS APP" image={news} repoUrl="https://github.com/your-username/news-app-repo" showButton={true} />
+        <Card title="WEATHER APP" image={weather} repoUrl="https://github.com/Reshoo18/Weather-App" showButton={true} />
+        <Card title="BILLING SOFTWARE" image={bill} repoUrl="https://github.com/Reshoo18/BillingSoftware-" showButton={true} />
+        <Card title="TEXT ANALYZER" image={text} repoUrl="https://textythings.netlify.app" showButton={true} />
+        <Card title="NEWS APP" image={news} repoUrl="https://github.com/Reshoo18/NewsApp-Project" showButton={true} />
       </div>
     </div>
   );

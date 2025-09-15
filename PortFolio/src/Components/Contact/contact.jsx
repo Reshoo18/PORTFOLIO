@@ -22,7 +22,7 @@ function Contact() {
                   }
             })
             gsap.from("form",{
-                  x:100,
+                  x:-10,
                   duration:1,
                   opacity:0,
                   stagger:1,
