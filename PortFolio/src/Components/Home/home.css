@@ -94,8 +94,13 @@ color:  white;
 color: #0A66C2; 
 }
 
-.social-links a.instagram-icon {
-color: #E4405F; 
+.social-links a.gmail-icon {
+  color: #EA4335; /* Gmail red */
+}
+
+.social-links a.gmail-icon:hover {
+  color: #c5221f; /* darker red on hover */
+  transform: scale(1.2);
 }
 
 .social-links a.leetcode-icon {
