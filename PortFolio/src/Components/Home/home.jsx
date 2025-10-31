@@ -43,7 +43,7 @@ function Home() {
                     <div className="line3">
                         <Typewriter
                             options={{
-                                strings: ["WEB DEVELOPER", "MERN DEVELOPER"],
+                                strings: ["WEB DEVELOPER", "MERN STACK DEVELOPER"],
                                 autoStart: true,
                                 loop: true,
                             }}

@@ -127,7 +127,7 @@ function About() {
             <h1>SKILLS</h1>
             <dd>
               <li>
-                MERN STACK WEB DEVELOPER
+                MERN STACK DEVELOPER
               </li>
               <li>
                 DATA STRUCTURE & ALGORITHMS
@@ -141,7 +141,7 @@ function About() {
       </div>
       <div className="rightabout">
         {/* Pass no props to hide the button on these cards */}
-        <Card title="MERN STACK WEB DEVELOPER" image={mern} />
+        <Card title="MERN STACK DEVELOPER" image={mern} />
         <Card title="C++" image={cpp} />
         <Card title="DSA" image={dsanew} />
       </div>
